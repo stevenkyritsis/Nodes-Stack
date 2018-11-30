@@ -2,19 +2,17 @@
 using namespace std;
 
 struct node;
+struct info_rec;
 typedef node *Ptr;
 struct node{
-	char name[20];
-	int age, id;
-	float height;
+	info_rec info;
 	Ptr nxt;
 };
 
-struct info_rc{
-	char id[10]; //ID
-	int major; //major code
-	float gpa; 
-	int credits;
+struct info_rec{
+	char name[20];
+	int age, id;
+	float height;
 };
 
 Ptr start_ptr = NULL;

@@ -10,6 +10,13 @@ struct node{
 	Ptr nxt;
 };
 
+struct info_rc{
+	char id[10]; //ID
+	int major; //major code
+	float gpa; 
+	int credits;
+};
+
 Ptr start_ptr = NULL;
 node *temp;
 
